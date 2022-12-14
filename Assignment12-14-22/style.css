@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f2f2f2;
+}
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    border-bottom: 1px solid #627d98;
+}
+.topnav a {
+    float: left;
+    color: #627d98;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+.topnav a:hover {
+    color: #5a5fe2;
+}
+.topnav a.active {
+    color: #627d98;
+}
+.topnav .searchpatientbox{
+    margin: 0.5rem;
+    border: 1px solid #b0becb;
+    font-size: 1.5rem;
+    color: #243b53;
+    border-radius: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: none;
+    background: transparent;
+}
+
+.rightnav{
+    
+    width: 100%;
+    /* transform: translateZ(0px) translateX(calc(100% - 53px)); */
+}

@@ -1,0 +1,14 @@
+<div style="margin: 0.5em">
+    <div class="d-flex d-center">
+        <div style="width:100%; ">
+            <h2 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h2>
+            <p [ngClass]="{'strike': !todo.active}" class="mb-1">{{todo.desc}}</p>
+            <input type="checkbox" id="task{{i}}" name="taskDone" (click) = "todoCheck(todo)" [checked] = "!todo.active">
+            <label for="task{{i}}"> Done</label><br>
+        </div>
+        <div>
+            <i class="fa-solid fa-trash-can" (click) = "deleteTodoItem(todo)"></i>
+        </div>
+    </div>
+    
+</div>

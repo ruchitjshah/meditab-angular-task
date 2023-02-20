@@ -1,0 +1,14 @@
+<div style="height: 65%;">
+    <div style="height: 100%;  overflow-y: scroll;">
+        <div *ngIf="this.todos.length === 0; else elseBlock"><h3 style="text-align: center; margin-top: 1rem;">No ToDos To Display</h3></div>
+        <ng-template #elseBlock>
+            <div *ngFor="let todo of todos; index as i">
+                <app-todo-item [todo]="todo" [i] = "i" (todoDelete)="deleteTodo($event)" (todoCheckbox) = "todoDone($event)"></app-todo-item>
+            </div>
+        </ng-template>
+    </div>
+</div>
+<div style="height: 35%;">
+    <app-todo-add (todoAdd)="addTodo($event)"></app-todo-add>
+</div>
+

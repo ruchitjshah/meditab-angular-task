@@ -1,0 +1,21 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.todo-container{
+    height: 90%;
+    width: 30%;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: white;
+    color: #002B5B;
+    border-radius: 0.5em;
+}
+.todo-header{
+    text-align: center;
+    border-bottom: 1px solid #0027541d;
+    padding-bottom: 1rem;
+}
